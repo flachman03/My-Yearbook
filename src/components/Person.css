@@ -1,0 +1,15 @@
+img {
+  height: 200px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.staff-card {
+  background-color: #fff;
+  opacity: 0.9;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+}
