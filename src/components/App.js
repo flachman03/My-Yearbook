@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  addNewPerson = (e, person) => {
+    e.preventDefault()
+    this.setState({[person.people]: [...this.state[person.people], person]})
+  }
   render() {
     return (
       <main className="App">
@@ -20,7 +24,7 @@ class App extends Component {
         <h1>Turing Yearbook</h1>
         </header>
         <Cohort staff={this.state.staff} students={this.state.students}/>
-        <Form />
+        <Form addNewPerson={this.addNewPerson}/>
       </main>
     );
   }
